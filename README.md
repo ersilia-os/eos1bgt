@@ -2,7 +2,7 @@
 
 Retrieves the 100 nearest neighbours of a query molecule in COCONUT, a collection of 715,818 natural products indexed by Ersilia. Three learned embeddings are searched independently, namely CLAMP for bioactivity, SAND for 3D shape and Mol-JEPA for predicted biological context, and their rankings are fused into one list. Ersilia built the search with LazySim, which indexes each embedding with turbovec 4-bit quantization.
 
-This model was incorporated on 2026-10-27.Last packaged on 2026-10-28.
+This model was incorporated on 2026-10-27.Last packaged on 2026-10-29.
 
 ## Information
 ### Identifiers
@@ -44,7 +44,7 @@ _10 of 100 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `Internal`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos1bgt](https://hub.docker.com/r/ersiliaos/eos1bgt)
-- **Docker Architecture:** `ARM64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1bgt.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos1bgt.zip)
 
 ### Resource Consumption
@@ -52,6 +52,10 @@ _10 of 100 columns are shown_
 - **Environment Size (Mb):** `587`
 - **Image Size (Mb):** `2826.88`
 
+**Computational Performance (seconds):**
+- 10 inputs: `30.26`
+- 100 inputs: `25.69`
+- 10000 inputs: `456.54`
 
 ### References
 - **Source Code**: [https://github.com/ersilia-os/lazy-sim](https://github.com/ersilia-os/lazy-sim)
